@@ -51,6 +51,8 @@ app.get('/',routes.index)
 app.get('/account',page.account)
 app.get('/cart',page.cart)
 app.get('/product',page.product)
+app.get('/payment',page.payment)
+app.get('/main',page.main)
 
 app.post('/register',client.register)
 app.post('/login',client.login)

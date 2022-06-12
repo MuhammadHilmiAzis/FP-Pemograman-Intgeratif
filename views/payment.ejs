@@ -73,41 +73,51 @@
       const item = JSON.parse(localStorage.getItem('product'))
       table.innerHTML = `
       <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
+        <th>Ewallet</th>
+        <th></th>
+        <th>Action</th>
       </tr>
       <tr>
         <td>
           <div class="cart-info">
-            <img src="${item.gambarBarang}"></img>
-            <div>
-              <p>${item.namaBarang}</p>
-              <small>Harga: ${item.hargaBarang}</small>
-              <br />
-              <div onclick="hapus()"><a href="">Remove</a></div>
-            </div>
+            Ewallet-1
           </div>
         </td>
         <!-- <td><input type="nunber" value="1" /></td> -->
-        <td>1</td>
-        <td>Rp50.000</td>
+        <td></td>
+        <td><button>Bayar</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            Ewallet-2
+          </div>
+        </td>
+        <!-- <td><input type="nunber" value="1" /></td> -->
+        <td></td>
+        <td><button>Bayar</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            Ewallet-3
+          </div>
+        </td>
+        <!-- <td><input type="nunber" value="1" /></td> -->
+        <td></td>
+        <td><button>Bayar</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            Ewallet-4
+          </div>
+        </td>
+        <!-- <td><input type="nunber" value="1" /></td> -->
+        <td></td>
+        <td><button>Bayar</button></td>
       </tr>
       `
-      
-      function hapus(){
-        localStorage.clear('product')
-      }
-
-      const flag = localStorage.getItem('product')
-      const buttonDiv = document.querySelector('.button-div')
-      if(flag){
-        buttonDiv.innerHTML =`
-        <button type="button" class="btn-buy">Buy Now</button>
-        `
-      } 
-     
-      
     </script>
   </body>
 </html>

@@ -540,7 +540,7 @@ form .btn {
   width: 100%;
   border: none;
   cursor: pointer;
-  margin: 10px;
+  margin:8px;
 }
 form .btn:focus {
   outline: none;

@@ -7,13 +7,14 @@ E-Commerce Website with RestAPI using NodeJS, Express, MySQL
     <img src="https://img.icons8.com/color/100/00000/nodejs.png"/>
 </p>
 
-Dokumentasi API 
+##Dokumentasi API 
+
 ### Kelompok 6
 5027201049 - Muhammad Hilmi Aziz <br>
 5207201050 - Muhammad Rifqi Fernanda <br>
 5027201062 - Gilang Bayu Gumantara <br>
 
-{{E-gil wallet}} = https://peepaywallet-v2.herokuapp.com/
+{{E-gil wallet}} = https://egilwallet.herokuapp.com/
 
 ### Dokumentasi
 **Endpoint**        : GET {{E-gil wallet}} <br>
@@ -49,7 +50,7 @@ Contoh:
 ```
 
 ### Registrasi
-**Endpoint**        : POST {{E-gil wallet}}api/profile <br>
+**Endpoint**        : POST {{E-gil wallet}}api/register <br>
 **Body Request**    : username, email, password <br>
 ***Authorization*** : - <br>
 Contoh:
@@ -77,7 +78,7 @@ Contoh:
 Contoh:
 ```
 {
-    "email" : "bala1@gmail.com",
+    "email" : "bala@gmail.com",
     "password" : "123"
 }
 ```

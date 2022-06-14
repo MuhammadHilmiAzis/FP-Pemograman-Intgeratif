@@ -3,7 +3,7 @@ const express   = require('express')
   const user        = require('./api/routes/user')
   const page        = require('./api/routes/page')
   const client = require('./controllers/user')
-
+ const cors   = require('cors')
 const app       = express()
 const mysql     = require('mysql')
 const port      = 3000
@@ -35,7 +35,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('public'))
-
+app.use(cors())
 // const db = require('./config/database')
 try {
   async function start(){
@@ -53,6 +53,12 @@ app.get('/cart',page.cart)
 app.get('/product',page.product)
 app.get('/payment',page.payment)
 app.get('/main',page.main)
+app.get('/ewallet1',page.ewallet1)
+app.get('/ewallet2',page.ewallet2)
+app.get('/ewallet3',page.ewallet3)
+app.get('/ewallet4',page.ewallet4)
+app.get('/invoice',page.invoice)
+app.get('/account2',page.accountLogged)
 
 app.post('/register',client.register)
 app.post('/login',client.login)

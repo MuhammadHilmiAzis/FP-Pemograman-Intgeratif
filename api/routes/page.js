@@ -17,3 +17,27 @@ exports.payment = function(req,res){
 exports.main = function(req,res){
     res.render('afterLogin',{message:''})
 }
+
+exports.ewallet1 = function(req,res){
+    res.render('ewallet1',{message:''})
+}
+
+exports.ewallet2 = function(req,res){
+    res.render('ewallet2',{message:''})
+}
+
+exports.ewallet3 = function(req,res){
+    res.render('ewallet3',{message:''})
+}
+
+exports.ewallet4 = function(req,res){
+    res.render('ewallet4',{message:''})
+}
+
+exports.invoice = function(req,res){
+    res.render('invoice',{message:''})
+}
+
+exports.accountLogged = function(req,res){
+    res.render('accountLogged',{message:''})
+}

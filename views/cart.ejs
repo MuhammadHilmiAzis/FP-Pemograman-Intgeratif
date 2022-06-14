@@ -23,8 +23,8 @@
           </a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="/">Home</a></li>
+          <ul id  ="MenuItems">
+            <li><a href="/main">Home</a></li>
             <li><a href="/product">Products</a></li>
             <li><a href="/account">Account</a></li>
             <!-- TODo: 22:20 -->
@@ -91,7 +91,7 @@
         </td>
         <!-- <td><input type="nunber" value="1" /></td> -->
         <td>1</td>
-        <td>Rp50.000</td>
+        <td>Rp ${item.hargaBarang}</td>
       </tr>
       `
       
@@ -103,7 +103,7 @@
       const buttonDiv = document.querySelector('.button-div')
       if(flag){
         buttonDiv.innerHTML =`
-        <button type="button" class="btn-buy">Buy Now</button>
+        <a href="/payment"><button type="button" class="btn-buy">Buy Now</button></a> 
         `
       } 
      

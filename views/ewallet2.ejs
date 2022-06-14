@@ -123,7 +123,7 @@ js for toggle form -->
 
       
         RegForm.addEventListener("submit", async(e)=>{
-          const urll = 'http://localhost:3000/register'
+          const urll = 'https://peepaywallet-v2.herokuapp.com/api/profile'
           e.preventDefault()
           const formData = new FormData(RegForm)
           const formDataSerialized = Object.fromEntries(formData)
@@ -154,7 +154,7 @@ js for toggle form -->
         })
 
       LoginForm.addEventListener("submit", async(e)=>{
-        const url = 'http://localhost:3000/login' 
+        const url = 'https://peepaywallet-v2.herokuapp.com/api/login' 
 
         e.preventDefault()
         const DataForm = new FormData(LoginForm)
@@ -176,7 +176,7 @@ js for toggle form -->
           console.log(json)
           if (json.status == 200) {
             alert("Login Succes")
-            window.location.href="http://localhost:3000/main"
+            window.location.href="http://localhost:3000/invoice2"
 
            // swal({
              //     title: "Login Successfully!",

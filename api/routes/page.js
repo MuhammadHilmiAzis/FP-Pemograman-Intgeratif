@@ -37,6 +37,15 @@ exports.ewallet4 = function(req,res){
 exports.invoice = function(req,res){
     res.render('invoice',{message:''})
 }
+exports.invoice2 = function(req,res){
+    res.render('invoice2',{message:''})
+}
+exports.invoice3 = function(req,res){
+    res.render('invoice3',{message:''})
+}
+exports.invoice4 = function(req,res){
+    res.render('invoice4',{message:''})
+}
 
 exports.accountLogged = function(req,res){
     res.render('accountLogged',{message:''})

@@ -26,7 +26,7 @@
           <ul id  ="MenuItems">
             <li><a href="/main">Home</a></li>
             <li><a href="/product">Products</a></li>
-            <li><a href="/account">Account</a></li>
+            <li><a href="/">Logout</a></li>
             <!-- TODo: 22:20 -->
           </ul>
         </nav>
@@ -55,6 +55,8 @@
         <p class="copyright">Copyright 2020 - FP-Kel 6</p>
       </div>
     </div>
+
+    
     <!-- JS for Toggle menu -->
     <script>
       var MenuItems = document.getElementById("MenuItems");
@@ -72,9 +74,17 @@
       const table = document.querySelector('table')
       const item = JSON.parse(localStorage.getItem('product'))
       table.innerHTML = `
+      <div style="  ">
+        <h1>Chekout Ewallet 2</h1>
+      </div>
+      <div class="username"></div>
+      <div>
+        <div class="saldo"></div>
+        <button>Topup</button>
+      </div>
+      <br>
       <tr>
         <th>Product</th>
-        <th>Ewallet</th>
         <th>Quantity</th>
         <th>Subtotal</th>
       </tr>
@@ -89,27 +99,21 @@
             </div>
           </div>
         </td>
-        <td><div class="saldo">Saldo : </div></td>
         <!-- <td><input type="nunber" value="1" /></td> -->
         <td>1</td>
-        <td>Rp50.000</td>
+        <td>${item.hargaBarang}</td>
       </tr>
       `
-      
-      function hapus(){
-        localStorage.clear('product')
-      }
-
       const flag = localStorage.getItem('product')
       const buttonDiv = document.querySelector('.button-div')
       if(flag){
         buttonDiv.innerHTML =`
-        <button type="button" class="btn-buy" onclick="bayar()">Checkout</button> 
+        <button type="button" class="btn-buy">Checkout</button> 
         `
       } 
-     
-
       
     </script>
+    <script src="js/getProfile.js"></script>
+
   </body>
 </html>

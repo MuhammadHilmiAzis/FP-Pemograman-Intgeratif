@@ -128,14 +128,14 @@ Contoh:
 ```
 
 ### Pembelian
-**Endpoint**        : POST {{peepay}}api/pembelian <br>
+**Endpoint**        : POST {{E-gil wallet}}api/pembelian <br>
 **Body Request**    : email, harga <br>
 ***Authorization*** : Bearer Token  <br>
 Contoh:
 ```
 {
-    "email" : "uhuy1@gmail.com",
-    "harga" : "1000"
+    "email" : "bala@gmail.com",
+    "harga" : "10000"
 }
 ```
 
